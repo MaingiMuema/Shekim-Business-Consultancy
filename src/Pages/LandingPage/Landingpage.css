@@ -1,0 +1,146 @@
+.hero-bg{
+    background: linear-gradient(120deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.794),rgba(255, 255, 255, 0.419),rgba(255, 255, 255, 0)),url('../../assets/Shekim\ hero-img\ \(1\).jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.cta{
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+  
+.cta:hover{
+padding: 8px 16px;
+background-color: #ac8743;
+color: #fff;
+text-decoration: none;
+border: 1px solid #ac8743;
+border-radius: 5px;
+transform: translateX(5px);
+}
+
+.hero-content{
+    padding: 50px;
+}
+
+p{
+  font-size: 18px;
+}
+
+/*
+
+Services Cards
+
+*/
+
+
+.item{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  #item-card{
+    transition:0.5s;
+    cursor:pointer;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    margin: 20px 10px;
+  }
+
+  @media screen and (max-width: 760px) {
+
+  }
+
+  #item-card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  #item-card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+   
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+      
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.102);
+    content: '';
+    border-radius: 20px;
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+#rightArrow {
+  margin-right: 40px;
+  font-size: 28px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover #rightArrow {
+  color: #ac8743;
+  font-size: 36px;
+  transform: translateX(20px);
+}
+
+
+#whychooseus{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/Shekim\ hero-img\ \(2\).jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.choose-us-text{
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/* This will apply to all scrollbars on the page*/
+#values::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 5px;
+}
+
+/* Track */
+#values::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+#values::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+#values::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

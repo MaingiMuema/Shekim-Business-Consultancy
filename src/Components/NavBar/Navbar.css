@@ -1,0 +1,88 @@
+.profile-menu { 
+    .dropdown-menu{
+      right: 0;
+      left: unset;
+    }
+    .fa-fw{
+      margin-right: 10px;
+    }  
+}
+.toggle-change{
+    &::after {
+      border-top: 0;
+      border-bottom: .3em solid;
+    }
+} 
+
+.free-consultation{
+  padding: 10px 24px;
+  background-color: #ac8743;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #ac8743;
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.consultation-btn{
+  margin-left: 80px;
+}
+
+.free-consultation:hover{
+  padding: 10px 24px;
+  background-color: #fff;
+  color: #ac8743;
+  text-decoration: none;
+  border: 1px solid #ac8743;
+  border-radius: 5px;
+  transform: scale(0.8);
+}
+
+/* Ribbon.css */
+
+.ribbon {
+    position: relative;
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(45deg, #ac8743, #FFFACD, #342a20);
+    animation: gradientChange 3s infinite, ribbonPulse 2s infinite;
+    transition: height 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  }
+  
+  @keyframes gradientChange {
+    0%, 100% {
+      background: linear-gradient(45deg, #ac8743, #FFFACD, #342a20);
+    }
+    25%, 75% {
+      background: linear-gradient(45deg, #FFFACD, #342a20, #ac8743);
+    }
+    50% {
+      background: linear-gradient(45deg, #ac8743, #FFFACD, #342a20),
+                  linear-gradient(45deg, #FFFACD, #342a20, #ac8743);
+    }
+  }
+  
+  @keyframes ribbonPulse {
+    0%, 100% {
+      height: 8px;
+    }
+    50% {
+      height: 8px;
+    }
+  }
+  
+  .ribbon-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+  }
+
+.company-name{
+    margin-top: 18px;
+    font-size: 16px;
+}
+  
